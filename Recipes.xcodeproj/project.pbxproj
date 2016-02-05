@@ -15,6 +15,8 @@
 		9162BE351C64A51500B5B005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9162BE331C64A51500B5B005 /* LaunchScreen.storyboard */; };
 		9162BE401C64A51500B5B005 /* RecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162BE3F1C64A51500B5B005 /* RecipesTests.swift */; };
 		9162BE4B1C64A51500B5B005 /* RecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162BE4A1C64A51500B5B005 /* RecipesUITests.swift */; };
+		917659111C64C1350011CB30 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176590F1C64C1350011CB30 /* Recipe+CoreDataProperties.swift */; };
+		917659121C64C1350011CB30 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917659101C64C1350011CB30 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		9162BE461C64A51500B5B005 /* RecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9162BE4A1C64A51500B5B005 /* RecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesUITests.swift; sourceTree = "<group>"; };
 		9162BE4C1C64A51500B5B005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9176590F1C64C1350011CB30 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		917659101C64C1350011CB30 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,10 @@
 		9162BE261C64A51500B5B005 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				9176590E1C64C09B0011CB30 /* Controller */,
+				9176590D1C64C0970011CB30 /* View */,
+				9176590C1C64C0900011CB30 /* Model */,
 				9162BE271C64A51500B5B005 /* AppDelegate.swift */,
-				9162BE291C64A51500B5B005 /* ViewController.swift */,
 				9162BE2B1C64A51500B5B005 /* Main.storyboard */,
 				9162BE311C64A51500B5B005 /* Assets.xcassets */,
 				9162BE331C64A51500B5B005 /* LaunchScreen.storyboard */,
@@ -126,6 +132,30 @@
 				9162BE4C1C64A51500B5B005 /* Info.plist */,
 			);
 			path = RecipesUITests;
+			sourceTree = "<group>";
+		};
+		9176590C1C64C0900011CB30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9176590F1C64C1350011CB30 /* Recipe+CoreDataProperties.swift */,
+				917659101C64C1350011CB30 /* Recipe.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9176590D1C64C0970011CB30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9176590E1C64C09B0011CB30 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9162BE291C64A51500B5B005 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9162BE2A1C64A51500B5B005 /* ViewController.swift in Sources */,
+				917659111C64C1350011CB30 /* Recipe+CoreDataProperties.swift in Sources */,
 				9162BE281C64A51500B5B005 /* AppDelegate.swift in Sources */,
 				9162BE301C64A51500B5B005 /* Recipes.xcdatamodeld in Sources */,
+				917659121C64C1350011CB30 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +523,7 @@
 				9162BE511C64A51500B5B005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9162BE521C64A51500B5B005 /* Build configuration list for PBXNativeTarget "RecipesTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +532,7 @@
 				9162BE541C64A51500B5B005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9162BE551C64A51500B5B005 /* Build configuration list for PBXNativeTarget "RecipesUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +541,7 @@
 				9162BE571C64A51500B5B005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
