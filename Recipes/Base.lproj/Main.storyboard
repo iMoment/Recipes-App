@@ -130,7 +130,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U3E-4t-YXP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Food" translatesAutoresizingMaskIntoConstraints="NO" id="U3E-4t-YXP">
                                 <rect key="frame" x="213" y="266" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="2XG-CM-dfn"/>
@@ -145,11 +145,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hn9-Ro-GwK">
                                 <rect key="frame" x="250" y="481" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.52941176469999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="90e-HM-EvY"/>
                                     <constraint firstAttribute="width" constant="100" id="pXp-XT-sIf"/>
                                 </constraints>
-                                <state key="normal" title="Create Recipe"/>
+                                <state key="normal" title="Create Recipe">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -198,4 +201,7 @@
             <point key="canvasLocation" x="890" y="243"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Food" width="1200" height="692"/>
+    </resources>
 </document>

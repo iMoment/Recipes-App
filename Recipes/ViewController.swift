@@ -13,7 +13,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableView: UITableView!
     var recipes = [Recipe]()
-    var fetchedResultsController: NSFetchedResultsController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
